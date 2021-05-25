@@ -38,7 +38,7 @@ export default function Home({ data }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_PREFIX_URL}luisvalgoi/repos`);
   const data = await res.json();
 
@@ -50,5 +50,6 @@ export async function getServerSideProps() {
 
   return {
     props: { data },
+    revalidate: 10,
   };
 }
