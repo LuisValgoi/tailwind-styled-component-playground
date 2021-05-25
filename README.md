@@ -2,6 +2,10 @@
 
 The object of this project was to get to know more about the `tailwind-styled-components` library.
 
+# Status
+
+![Vercel](https://vercelbadge.vercel.app/api/luisvalgoi/tailwind-styled-component-playground?style=for-the-badge)
+
 # Stack
 
 - `nextjs` with Incremental Static Regenaration of `10 seconds`.
