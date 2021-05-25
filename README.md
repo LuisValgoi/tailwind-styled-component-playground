@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Objective
 
-## Getting Started
+The object of this project was to get to know more about the `tailwind-styled-components` library.
 
-First, run the development server:
+# Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- `nextjs` with Incremental Static Regenaration of `10 seconds`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `tailwind` for not writing css anymore.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- `tailwind-styled-components` for speedup the development.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# Flow
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The idea is to `fetch` the api in the `server` so I can pass to the client the data got from the public [GitHub API](https://api.github.com/users/).
 
-## Learn More
+# Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `yarn dev` to build and run the app.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- just `cp` the `.env.local.example` to a new one called `.env.local`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Images
 
-## Deploy on Vercel
+https://user-images.githubusercontent.com/8363610/119433578-e5e18d00-bcec-11eb-9f85-4854e85e073f.png
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+https://user-images.githubusercontent.com/8363610/119433610-f6920300-bcec-11eb-84fc-92a69fbd7e68.png
