@@ -12,6 +12,7 @@ const AppTitle = tw.h1`uppercase font-bold text-center pb-3 text-red-500 text-5x
 
 export default function Home({ data }) {
   const { isFallback } = useRouter();
+
   if (isFallback) {
     return <h1>loading...</h1>;
   }
@@ -42,14 +43,19 @@ export async function getStaticProps() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_PREFIX_URL}luisvalgoi/repos`);
   const data = await res.json();
 
+  await new Promise((res) => setTimeout(res, 500));
+
   if (!data) {
     return {
       notFound: true,
+      fallback: true,
+      revalidate: 10,
     };
   }
 
   return {
     props: { data },
+    fallback: true,
     revalidate: 10,
   };
 }
